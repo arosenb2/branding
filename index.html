@@ -18,18 +18,22 @@
             font-family: "Open Sans Condensed", "DIN Condensed", sans-serif;
             display: flex;
         }
+
         main {
             background: #34a5da;
             padding: 0;
             margin: 0;
             width: 60vw;
         }
+
         #splash {
             width: 40vw;
             height: 100vh;
             background-image: url(bg.jpg);
             background-position: bottom;
+            background-size: cover;
         }
+
         h1 {
             padding-top: 50px;
             font-size: 84px;
@@ -38,18 +42,22 @@
             width: 475px;
             line-height: 95%;
         }
+
         h1 a {
             text-decoration: none;
             color: #fafafa;
         }
+
         h1 a:hover {
             color: #232323;
         }
+
         ul {
             padding: 0;
             margin: 0;
             list-style: none;
         }
+
         main li a {
             font-size: 50px;
             font-weight: bold;
@@ -57,12 +65,15 @@
             text-decoration: none;
             transition: color 0.1s ease-out;
         }
+
         main li a:hover {
             color: #fafafa;
         }
+
         main h1, main ul {
             margin-left: 100px;
         }
+
         footer {
             position: fixed;
             bottom: 0;
@@ -72,39 +83,46 @@
             display: flex;
             background: #000;
         }
+
         footer p {
             margin: 0 0 0 10px;
             padding: 0;
             width: 75%;
             align-self: center;
         }
+
         footer p, footer li a {
             text-transform: uppercase;
             color: #fafafa;
         }
+
         footer ul {
             align-items: center;
             display: flex;
             width: 25%;
         }
+
         footer li {
             flex: 1;
             text-align: center;
             padding: 5px 0;
             transition: background-color 0.2s ease-out;
         }
+
         footer li a {
             text-decoration: none;
             display: block;
         }
+
         footer li:hover {
             background: #34a5da;
         }
+
         a {
             transition: color, border 0.1s ease-out;
         }
 
-        @media screen and (max-width: 425px) {
+        @media screen and (orientation: portrait) and (max-width: 425px) {
             body {
                 display: block;
             }
@@ -117,6 +135,7 @@
                 bottom: 0;
                 width: 100vw;
                 z-index: 100;
+
             }
 
             main {
@@ -168,6 +187,35 @@
             footer ul li {
                 position: relative;
                 top: -65px;
+            }
+        }
+
+        @media screen and (orientation: landscape) and (max-width: 768px) {
+            #splash {
+                background-size: cover;
+            }
+
+            main h1 {
+                font-size: 45px;
+                max-width: 90%;
+                margin-top: -20px;
+            }
+
+            main ul li a {
+                font-size: 20px;
+            }
+
+            main h1, main ul {
+                margin-left: 20px;
+            }
+
+            footer ul {
+                display: flex;
+                width: 100%;
+            }
+
+            footer ul li {
+                text-align: center;
             }
         }
     </style>
