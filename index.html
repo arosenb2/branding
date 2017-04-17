@@ -9,12 +9,18 @@
     <!-- blue: #era5da -->
     <!-- dark gray: #222 -->
     <style>
+        @font-face {
+            font-family: 'Open Sans Condensed';
+            font-style: normal;
+            font-weight: 700;
+            src: local("Open Sans Condensed"),local("OpenSansCondensed"),url(https://fonts.gstatic.com/s/opensanscondensed/v10/gk5FxslNkTTHtojXrkp-xM6Eyu0BCqAfob_z3hhzRFzr7w4p9aSvGirXi6XmeXNA.woff) format("woff");
+        }
         body {
             padding: 0;
             margin: 0;
             background: #222;
             color: #fafafa;
-            font-family: "Open Sans Condensed", "DIN Condensed", sans-serif;
+            font-family: "Open Sans Condensed";
             display: flex;
         }
 
@@ -238,13 +244,5 @@
             <li><a href="#contact" title="Contact me" target="_blank">Contact</a></li>
         </ul>
     </footer>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.27/webfontloader.js"></script>
-    <script>
-     WebFont.load({
-        google: {
-          families: ['Open Sans Condensed:700']
-        }
-      });
-    </script>
 </body>
 </html>
